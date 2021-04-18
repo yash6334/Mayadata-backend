@@ -2,12 +2,11 @@ const express = require('express')
 const mysql = require('mysql')
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    database:"mayadata"
-}
-)
+    host: "us-cdbr-east-03.cleardb.com",
+    user: "b7ea0fd677b820",
+    password: "bdf3f947",
+    database:"heroku_0b1f1001861990d"
+})
 
 db.connect((err)=>{
     if(err){
